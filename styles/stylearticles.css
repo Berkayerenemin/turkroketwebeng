@@ -73,8 +73,8 @@
 }
 
 blockquote{
-    font-size: 16px;
-    width:100%;
+    font-size:16px;
+    width:90%;
     font-family:Open Sans;
     font-style:italic;
     color: #555555;
@@ -92,7 +92,6 @@ blockquote{
     font-style: normal;
     font-weight: bold;
   }
-
   
 /*--------------------------------------------*/
 
@@ -567,3 +566,9 @@ blockquote{
     width:200px;
 }
 
+/*------------------------------------------*/
+
+#doppler-img-one{
+    max-height : 150px;
+    max-width : 250px;
+}

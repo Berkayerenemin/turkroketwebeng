@@ -1,0 +1,726 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Türk Roket Topluluğu - Tanıtım</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="faaf894b-5155-4659-9c8b-81056d98479c" class="page sans"><header><h1 class="page-title">Türk Roket Topluluğu - Tanıtım</h1></header><div class="page-body"><p id="3453c638-5191-4f89-a58c-a69838da0281" class="">
+</p><h2 id="a85e5776-2eb5-4be2-ba77-29542519380a" class="">Hakkımızda :</h2><p id="304e7863-f3c9-432e-960c-a0dc22c646e3" class="">Türk Roket Topluluğu, kuruluşu 2017’ye dayanan ve Türkiye’de roket bilimini genç, yaşlı; eğitimli, eğitimsiz ayrımı yapmadan anlatmaya çalışan bir topluluktur.</p><h2 id="523fcf56-b343-498d-a109-a3f0ef5e2355" class="">Hakkımızda Daha Fazla :</h2><h3 id="18664d62-b805-42a0-b2ac-61a67c872c87" class="">Kuruluş :</h3><p id="42a3499a-76c8-44b2-863e-4058774e2b4c" class="">Kurulduğu zaman ele alındığında, sayılı üniversitelerde bulunan “Roketçilik” topluluklarına karşın 2017’de ilgili <strong>birkaç fen</strong> <strong>lisesi öğrencisi tarafından kurulan</strong> Türk Roket Topluluğu, Türkiye’nin roket/uzay ve astronomi alanlarındaki yetersizliğini görmüş ve faaliyetlerini bu alanlarda belirlediği misyonları doğrultusunda gerçekleştirmeye çalışmıştır.</p><hr id="fdf7f007-eeae-4d26-a928-844157357cba"/><h3 id="c9d341ab-0dab-4926-954d-e95adcf2df35" class="">Teknofest Dönemi :</h3><p id="4f6c6fbf-9a03-4a3d-9a53-3a769ec24d0c" class="">Topluluk henüz 5 kişilik bir lise öğrenci ekibi iken 2018 yılında ilk kez düzenlenen “Teknofest Roket Yarışması” için hazırlıklara başlamıştır. Düşük irtifa kategorisine katılan topluluk, 3 aşamadan oluşan Roket Yarışması’nda ilk aşamayı geçmiş ancak ikinci aşamada maddi sorunlardan dolayı gerekli testleri yapamamış ve elenmek “zorunda” kalmıştır. Bu durum gelecek yarışmalar için tecrübe ve ekip uyumu için ön ayak olmuştur.</p><hr id="6b006fea-120f-4d0a-b990-839107b53054"/><h3 id="2e7b3122-8634-453d-8ea2-8b13bae07902" class="">Sunumlar :</h3><p id="765fb587-04a5-415e-8743-e91d2478b83d" class="">Topluluk, kurulduğu lisede -Karacabey’de- ve Mustafakemalpaşa ilçesinde belirlediği birkaç ortaokulda roket bilimi üzerine sunum yapmış ve Teknofest yarışmasında edindiği tecrübeleri aktarmıştır. Ayrıca 2019 yılında Topluluk kurucusu Berkay Eren EMİN, STM’deki stajında gelecek yıl için tasarımları devam eden roketlerinden bahsetmiştir.</p><hr id="7f1ebfa5-759f-45fe-9932-ec57ef259271"/><h3 id="8be21609-412b-4063-bfc9-b37e619d7104" class="">Atölye Dönemi :</h3><p id="65c4b955-8fe9-4881-979a-2516496ed321" class="">2019 yılında kendine ait bir atölye kuran Türk Roket Topluluğu, bu atölyede yeni projeleri üzerine çalışmaya başlamıştır. Bağış yapan insanlarla ve kendi imkanlarıyla buraya farklı hırdavat aletleriyle birlikte hem yapısal hem de elektronik malzemeler almıştır.</p><hr id="74cf93ca-56d5-441b-86ba-c4aa21668d3e"/><h3 id="66fcb836-2133-459c-a1ef-650c99a2f65b" class="">Hırsızlık ve Durgunluk Dönemi :</h3><p id="2de4120e-bc85-403c-8001-cf5fb8bbc8e3" class="">2020 yılında atölyesinde yaşadığı hırsızlık nedeniyle zor durumlar yaşayan topluluk, ilgili hukuki süreçler sonucunda yaşadığı maddi zararı kapatamamıştır. Akabinde dünya genelinde yaşanan virütik sonuçlar ve ekip üyelerinin sınav hazırlıkları dolayısıyla topluluk durgunluk dönemine girmiştir. Bu süreçte sponsorlarını da kaybeden topluluk bir süre inaktif olarak hayatına devam etmiştir.</p><hr id="b84e8ccc-487d-4dd1-8e2d-9a7c8a08bf23"/><h3 id="48f3f558-d05a-4be8-989e-92c1e465429c" class="">Yeniden :</h3><p id="01d7fb8b-0b68-40d4-9e11-b791f8f0eff5" class="">Ekibinin ve sponsorlarının kaybıyla ciddi zorluklar yaşayan topluluk ülke genelinde yaşanan karantinalar sonunda sahip olduğu Instagram hesabından takipçilerine durumuyla ilgili bir duyuru geçmiş ve akabinde gönüllü başvuru formunu yayınlamıştır. İlk başta 20’ye yakın başvuru alan topluluk liseden üniversite mezununa kadar birçok öğrencinin birlikte olduğu bir yere dönüşmüştür.</p><hr id="91e2847c-91b6-4f87-a8cd-1c3dadf3569b"/><h2 id="224f46a4-68f6-4af4-ad1d-b283dfec9084" class="">Takımlaşma:</h2><p id="04482097-a174-496d-81ba-335c8e3c677d" class="">Topluluk, gönüllü başvurular sonucunda kendi içerisinde belirli departmanlara ayrılmış ve departmanlara aktiflik ve baskınlık durumuna göre ilgili liderler seçilmiştir. Departmanlar ve takımlaşma tamamıyla “yüz yüze görüşme dezavantajı” ortadan kalkacak şekilde oluşturulmuştur.</p><h3 id="2b19b1fe-5b0d-4e13-9c78-04f04f62b90a" class="">Departmanlar :</h3><p id="1e32273e-5962-4f30-9a1f-e1087594cc9a" class=""><strong>Amaç</strong> : Bu bölümün amacı belirli departmanların tanıtımı, işlevi ve ilgili lider gönüllülerin belirlenmesini sağlamaktır.</p><p id="e4f540c8-86ff-4d73-90aa-f560f334e329" class="">
+</p><p id="cb64c2e1-9351-436e-9bf4-9b360fe75f1b" class="">Departmanlar 3 ana başlık altında kümelenmiştir.</p><div id="e924ba9e-b8b4-48ce-9b2b-03b10aed36a3" class="column-list"><div id="affd22f2-2829-4aad-b2f1-7d346be737a5" style="width:33.333333333333336%" class="column"><h3 id="aca6f9c1-dbbb-4501-9152-4b16cb0544b1" class="">SAHA </h3><p id="58240302-c640-4785-9d38-b30799facb7f" class=""><strong>Amaç </strong>: Yapılacak proje/etkinliklerin saha üzerindeki işlerini doğru ve plana uygun şekilde gerçekleştirmektir.</p><p id="b59e8cd0-1d44-4ede-8158-d437aae557d9" class="">
+</p><p id="90286246-681f-451b-949a-4bba50679f0f" class="">İlgili Departmanlar :</p><ul id="3298d612-b0eb-4df0-a784-bd395b6a4c28" class="bulleted-list"><li style="list-style-type:disc">Üretim / Test Departmanı</li></ul></div><div id="694a1eae-d961-4349-9f2e-b93cd62681e9" style="width:37.5%" class="column"><h3 id="19887ac4-1b1f-465b-8bdf-e1029d411463" class="">TEKNİK</h3><p id="63154a7d-a5e6-4eb5-97b0-097e141da65a" class=""><strong>Amaç </strong>: Yapılacak projeleri/etkinlikleri planlamak,tasarlamak, gerekirse teknik bilgi konularında yardımcı olmaktır.</p><p id="27193928-3d76-4371-9d44-e0651b65fd6f" class="">
+</p><p id="81169de3-3803-4cf2-ac19-054f8c2e7e52" class="">İlgili Departmanlar :</p><ul id="a882c279-a2df-4f44-ae3d-cc6db13d75ff" class="bulleted-list"><li style="list-style-type:disc">Yapısal / Mekanik Departmanı </li></ul><ul id="29b03562-147e-4029-9e21-1c2d285c651e" class="bulleted-list"><li style="list-style-type:disc">Aviyonik Departmanı</li></ul></div><div id="316da52a-fc6d-426d-86f1-8f193963eb9c" style="width:29.166666666666675%" class="column"><h3 id="c1532493-0118-4224-a8ae-f0b0894ce2d4" class="">ORGANİZASYON</h3><p id="6110d567-f1c9-4395-a824-0fa645c08714" class=""><strong>Amaç :</strong> Yapılacak proje/etkinliklerin ve topluluk içi durumların düzenli işleyişini sağlamaktır.</p><p id="ec4a8a50-8049-40a5-80e5-f31d0c7bfd4a" class="">
+</p><p id="bcfe7c7b-7a2c-4877-ad7e-812844e1de25" class="">İlgili Departmanlar :</p><ul id="d371568c-8c6e-427f-9d09-e373aebf5d5e" class="bulleted-list"><li style="list-style-type:disc">Medya / Yönetim Departmanı</li></ul></div></div><hr id="47bfc127-4f5e-408e-b799-a48c4b366583"/><h3 id="0ecc3178-8999-4af6-8819-914c10830820" class="">Medya / Yönetim Departmanı : </h3><p id="3842f084-9c83-4a79-a340-15accc9f54de" class="">Yukarıda ismi belirtilmiş bu departman organizyonel bir departman olup iki temel ekibe sahiptir.</p><p id="348c22b5-3474-4f9c-960e-aa94beb79199" class="">
+</p><ul id="b0ab6863-88b1-4a35-aa75-78d860c99263" class="bulleted-list"><li style="list-style-type:disc"><strong>Medya ekibi,</strong> Türk Roket Topluluğu’nun sosyal platformlardaki tanınırlığını ön plana çıkarmak zorundadır. Bu çerçevede ekip, yapacağı tüm etkinlik, proje ve işlerini <em>“uluslararası bir şirket” </em>teması ile <em>“samimi bir şekilde”</em> yürütecektir. 
+
+Buna ek olarak ekip, kendilerine ait olarak belirtilen tarihlerde, medya platformlarının ilgili verilerinin analiz raporunu yapmış ve dönemin şartlarına göre gelecekte neler yapılabileceğine dair önerilerini rapor halinde sunmuş olmak zorundadır. </li></ul><p id="eebc1980-8f10-4cd3-939c-1c8149c7ffce" class=""><div class="indented"><p id="c2ff1a26-408a-4a11-a1ad-aa21d252ff0d" class=""><strong>İlgili Kişiler :</strong> Cansu Baytürk (K), Talha Özcan, Dilşer Göçmen
+</p></div></p><ul id="ee01c987-cd7b-4195-81a5-411860c0c00a" class="bulleted-list"><li style="list-style-type:disc"><strong>Yönetim ekibi, </strong>Türk Roket Topluluğu’nda bulunan departmanların idari yapılanmasını, takıma yeni gelecek gönüllülerin oryantasyonunu ve kabulünü sağlamakla yükümlüdür. Bu bağlamda ekip üyeleri, tüm departmanlarla görüşebilir ve departmanların iletişimi konusunda ek çalışmalar yapabilir. 
+
+Ayrıca yönetim ekibi topluluğun mevcut tanınırlığını arttırmak ve geliştireceği projelere kaynak sağlamak amacıyla ilgili kişi ve kurumlarla görüşmek zorundadır. Bu doğrultuda yönetim ekibi topluluk içerisindeki işleyişin devamı, karar verme mekanizması ve proje yürütücülüğü hakkında da bir sorun oluşması dahilinde durumu değerlendirecek ve ek önlemler alacaktır.</li></ul><p id="0e0d49af-a94e-4f0a-8571-4b51fb84da23" class=""><div class="indented"><p id="bd902309-d971-44a6-8d7a-52bde9bc187b" class=""><strong>İlgili Kişiler :</strong> Berkay Eren Emin (K), Ali Kılıç, Muhammed Siraç Zor</p></div></p><p id="bc3adc70-76bf-4c31-8d04-cac236b7cf3f" class="">
+</p><h3 id="2e930349-f25e-40ca-94be-056da19d5ba7" class="">Aviyonik Departmanı :</h3><p id="3cd44f6d-8a20-4f59-b9ae-9c0c7d4e7a50" class="">Yukarıda ismi belirtilmiş bu departman teknik bir departman olup iki temel ekibe sahiptir.</p><p id="abb242ec-cad2-4710-bb3b-e75829683935" class="">
+</p><ul id="6310498e-2117-4492-95f0-91491a45db5e" class="bulleted-list"><li style="list-style-type:disc"><strong>Elektronik ekibi,</strong> ilgili projelerin elektronik altyapısı sağlamakla sorumludur. Bu bağlamda ekip, Anlaşmalar, Yönetim ve Yazılım ekibi ile işbirliği yapabilir. Ayrıca elektronik ekibi, bitmiş projelerin gelecek zamanlar için altyapısını geliştirmekle sorumludur.</li></ul><p id="f26ffc52-affd-430a-9877-6291d4983b29" class=""><div class="indented"><p id="d83011bd-13cf-4ec3-b85b-37972c64d451" class=""><strong>İlgili Kişiler :</strong> Ahmet Kurnalı (K), İsmail Kağan Saray, Hasan Hüseyin Öztürk, Serhat Özdemir,</p></div></p><p id="c70c66a6-2080-4d72-a4db-82e6a4ba8346" class="">
+</p><ul id="3f4fdd9e-53d6-4112-a0ce-bc5bbb432b97" class="bulleted-list"><li style="list-style-type:disc"><strong>Yazılım ekibi,</strong> ilgili projelerin yazılım altyapısını oluşturmakla sorumludur. Gerekli durumlarda elektronik ekibi ile birlikte çalışabilir. Ayrıca Anlaşmalar, Yönetim ve Elektronik ekibi ile işbirliği yapabilir.<p id="26ab9d0b-0278-40b3-ba5f-3ecb80f93a5b" class="">
+</p><p id="0d54183b-55c1-4c71-9737-351eecd8b8fe" class=""><strong>İlgili Kişiler :</strong>  Berkay Eren Emin, Mustafa Çatalbaş, Ali Kılıç</p></li></ul><p id="2907e1da-6f71-4102-882e-c089aaa679d0" class="">
+</p><h3 id="c7f6aaf9-b4d2-4dad-a614-26973bcf5559" class="">Yapısal / Mekanik Departmanı :</h3><p id="34fadfe5-1467-4233-a3a3-c3ccc660a542" class="">Yukarıda ismi belirtilmiş bu departman teknik bir departman olup sadece tek bir ekibe sahiptir.</p><p id="c8d54dd9-3282-4a46-b58d-bcc8d6558db4" class="">
+</p><ul id="c3f25993-6f32-40b3-9172-6e7a3d682799" class="bulleted-list"><li style="list-style-type:disc"><strong>Yapısal / Mekanik ekibi</strong>, ilgili projelerin yapısal ve mekanik kısımlarıyla ilgilenmekle yükümlüdür. İlgili projenin tasarımı, simülasyon testleri bu ekip tarafından yürütülür. Gerekli durumlarda diğer departmanlar ile birlikte çalışabilir.<p id="8623fdd8-6e2d-4049-b409-6c17d4ebab83" class="">
+</p><p id="912de8b2-0b3a-4358-a879-f95d3397a8ea" class=""><strong>İlgili Kişiler :</strong> Feyza Betül Gelici, Mustafa Çatalbaş, Serhat Özdemir , Yusuf Erdem, Berkay Eren Emin, Muhammed Siraç Zor, Cihan Kalbur</p><p id="644a6d56-d1f0-43b7-82cb-f859676cc03c" class="">
+</p></li></ul><h3 id="a470eaf1-8493-4c83-af8a-d3562d0857bc" class="">Üretim / Test Departmanı :</h3><p id="269c1351-c2c7-477f-8e97-82b7bc407f1a" class="">Yukarıda ismi belirtilmiş bu departman bir saha departmanı olup tek bir ekibe sahiptir.</p><p id="b8e8afe4-889c-4228-bc78-acf7c155a5dd" class="">
+</p><p id="30efe594-cb81-4bfd-aa46-2e358377183b" class="">Üretim tasarımı belirlenmiş projeyi sponsorlarımız olan/olmayan yerlerde ve atölyemizde üretiminin yaptırılması/yapılması işlemine denir. Aynı zamanda üretilen parçaların alımı, birleştirilmesi ve kargolanması da yine bu kısma dahil edilir.</p><p id="b9c78d4f-b197-4c01-a095-a03572b98cdf" class="">
+</p><ul id="f0be8ea6-1bd2-4032-981e-4b293c126515" class="bulleted-list"><li style="list-style-type:disc"><strong>Üretim / Test ekibi,</strong> teknik alandaki departmanlar tarafından planlanmış, tasarlanmış ve simülasyonları yapılmış ilgili projelerin sponsorlarımız olan/olmayan yerlerde ve atölyemizde üretimini ve saha testlerini yapmakla yükümlüdür. Test sonuçları daha sonrasında diğer projeler ve departmanlarla paylaşılabilir ve gerekirse ek testler yapabilir. Aynı zamanda tasarlanan, planlanan parçaların alımı, birleştirilmesi ve kargolanması da yine bu ekip tarafından kontrol edilir.</li></ul><hr id="a2de2a1e-7019-4fb1-8601-1523ee3cdcce"/><h2 id="4d995eb9-03dd-45e4-ac73-e0c2951d143d" class="">Genel Departman İlişkileri :</h2><p id="78223ff7-ef3a-4bdb-9798-4eaa68c8e0dd" class="">Departmanların kendi içlerinde ve diğer departmanlarla olan ilişkileri aşağıda maddeler halinde belirtilmiştir.</p><ul id="1ab24f28-3b4e-41c8-9e18-d08073dee7c3" class="bulleted-list"><li style="list-style-type:disc">Departmanlar gerekli iş gücü ve maddi desteği <strong>Medya/Yönetim Departmanı</strong> ile iletişim halinde giderecektir.</li></ul><ul id="4d1b6287-b866-4e78-afce-61a056af27c6" class="bulleted-list"><li style="list-style-type:disc">Bir gönüllü birden fazla departmana katılım sağlayabilir.</li></ul><ul id="dd56764e-b197-4ba6-8019-8e371fc77f12" class="bulleted-list"><li style="list-style-type:disc">Departmanlara katılan yeni gönüllülerin departmandaki aktif gönüllüler ile tanışmaları Departmanların kendi sorumluluğundadır.</li></ul><ul id="2a00b00c-0da0-4848-a664-a666393758dc" class="bulleted-list"><li style="list-style-type:disc">Bir lideri belirlenmemiş departmanların liderleri süreç içerisinde belirlenecektir.</li></ul><ul id="8f034d8e-3b64-49c2-8d1e-663f4ee4ae6b" class="bulleted-list"><li style="list-style-type:disc">Departmanlar kendi toplantılarını Discord uygulaması üzerinde düzenlemek/yapmak zorunda değildir. Ancak <strong>“Proje Toplantıları”</strong> Discord uygulaması üzerinden olmak zorundadır.</li></ul><ul id="294291b2-9a04-4c40-8dd6-5b19091782c1" class="bulleted-list"><li style="list-style-type:disc">Departmanlar, tüm departman gönüllülerinin onayı sonrasında ilgili projeye başlayabilirler.</li></ul><ul id="d0f5ce90-f894-4c23-b520-8b12fbb4c246" class="bulleted-list"><li style="list-style-type:disc">Departmanlar içerisindeki gönüllüler, farklı veya aynı proje/etkinlik sürecinde iş birliği yapabilirler.</li></ul><ul id="6adf1082-0aba-495e-8d1e-13d4d38005b5" class="bulleted-list"><li style="list-style-type:disc"><strong>Medya/Yönetim Departmanı</strong> bir tür Ajans* gibi çalışacak olup Topluluk dışı ve Topluluk içi bağlantıları sağlayacaktır.</li></ul><ul id="e0dd56f8-fd1a-4974-8154-2516e2ea9f7a" class="bulleted-list"><li style="list-style-type:disc">Her departman kendi içerisinde bağımsızdır. Ancak gerekli durumlarda diğer departmanlar tarafından olumlu/olumsuz etkiye maruz** kalabilirler.</li></ul><p id="b987a7c5-68b9-42cb-9b0a-4b541ec0ea18" class="">
+</p><p id="34483039-f8cc-4016-ab29-647816e87bfc" class="">** Burada bahsedilmek istenileni örnekle açıklamak gerekirse;</p><p id="0fe3a8ba-d36c-4512-8824-eabeb1f42834" class="">Yapılan bir proje/etkinlik sürecinde belirli aşamalarda farklı departmanlar rol alabilirler. Bunlar belirli zamanlar içerisinde olabilir. Bir departman belirli başlangıç ve bitiş tarihleri arasında kendisinin yapması gereken kısmı tamamlayıp/tamamlayamaması durumuna göre diğer bir departman tarafından olumlu/olumsuz etkiye maruz kalabilir.</p><hr id="88d8b966-4079-4725-b877-3d24cf0e87b8"/><h2 id="0546d006-d5ac-4d0e-be3e-91ae2b63aea5" class="">Misyon :</h2><p id="ab088ee5-4713-446a-857d-b5bdd64d0f09" class="">Türk Roket Topluluğu, toplumun tüm kesimine hitap ederek roket bilimine olan <strong>ilgiyi </strong>arttırmaya çalışmaktadır. Bu çerçevede saha üzerinde katma değeri yüksek <strong>projeler </strong>geliştirmeyi ve farklı platformlarda <strong>etkinlikler </strong>düzenlemeyi sürdürmektedir.</p><h2 id="4a9723f9-ecae-4168-b3f7-85c83f745196" class="">Vizyon :</h2><p id="44843d03-a1e0-4392-8a05-a7462836ab37" class="">Türk Roket Topluluğu, roket/uzay biliminin toplumdaki <strong>her </strong>kesimin anlayabileceği bir bakış açısıyla anlatılabileceği düşüncesinden yola çıkılarak oluşturulmuştur.</p><hr id="7d4140be-ed87-49b9-90b6-2bccf9679c25"/><h2 id="da0ab4dd-fc49-4b3e-bc68-a694c22e5928" class="">Gelecek :</h2><p id="92ad7eb8-f61e-4acb-852d-fcd9a26749d6" class="">Türk Roket Topluluğu, yukarıda belirtilen takımlaşmaları sonucunda geleceğe yönelik adımlar atmış ve kendine bir yol haritası belirlemiştir. </p><p id="baad66a9-92bb-4a84-b34f-d4b53ebf279d" class="">
+</p><h3 id="5700180b-c2b7-4dbf-bac8-1a001afe2dac" class="">Sunum :</h3><ul id="344cf2ab-c4f5-411e-897b-f5a4e22e9c31" class="bulleted-list"><li style="list-style-type:disc">Türk Roket Topluluğu, misyonunun bir parçası olarak roket/uzay bilimine olan ilgiyi arttırmak için lise ve ortaokullarda sunumlar yapmayı planlamıştır.</li></ul><ul id="acbe26b4-e18e-45c9-bff4-db2947287472" class="bulleted-list"><li style="list-style-type:disc">Farklı topluluklar ve kişilerle durum görüşülmüş ve işbirliği hakkında düşünceleri ve onayları alınmıştır.</li></ul><ul id="ed852694-bebd-4654-8f79-af00d6745570" class="bulleted-list"><li style="list-style-type:disc">Sunum yapılabilecek “dezavantajlı” muhtemel okul listesi belirlenmiştir.</li></ul><ul id="4946789b-2c0b-401a-a2f4-7dcf9a80fc7a" class="bulleted-list"><li style="list-style-type:disc">Topluluk olarak resmi izinler hakkında bazı sorunlar yaşanmıştır.</li></ul><ul id="9fa8994f-84c5-4734-9df1-27a7f0d07320" class="bulleted-list"><li style="list-style-type:disc">Eğitimlerin online verilmesi kararlaştırılmıştır.</li></ul><ul id="5e5b7543-3295-4099-82f4-ee24d163ff45" class="bulleted-list"><li style="list-style-type:disc">İlgili okullarla görüşülmesinin ardından bu yöntemin altyapı eksikliğinden ve öğrenci ilgisinden dolayı verimsiz olacağı kararlaştırılmıştır.</li></ul><p id="633acc13-1a96-41ba-b2ca-9fd21806a275" class="">
+</p><p id="d87ce879-c7f6-40fc-af1b-ef7d2e1cb9d9" class="">Bu proje ile ilgili çalışmalarımız devam etmektedir.</p><p id="857e40eb-bdb7-4faf-a1a3-3a286ba546ae" class="">
+</p><h3 id="d8dfb00c-57cb-47ec-a6e3-b7b1ae692b25" class="">Teknofest :</h3><ul id="6d0d38d9-9d65-43ba-b41e-a6b67db60697" class="bulleted-list"><li style="list-style-type:disc">Gönüllülerimizin birlikte olan uyumu, yüzyüze görüşme dezantajıyla birlikte normal topluluklardan daha yavaş bir şekilde ilerlemiştir. Bununla birlikte Topluluğumuz 2023 Teknofest yarışması için bir proje geliştirme zamanını kaybetmiş bulunmaktadır. Ancak çalışmalarımız 2024 yılı için devam etmektedir.</li></ul><ul id="db63d2b3-4303-466a-a74d-b5ca428e0dc2" class="bulleted-list"><li style="list-style-type:disc">İlk başta teknik departmanlarımız, tecrübe ve takım iş birliği/ruhu kazanmak adına kendilerine aylık ve daha uzun süreler boyunca görevler vermiştir.</li></ul><ul id="f3b12adc-935c-4462-9dc5-18a7e8198eef" class="bulleted-list"><li style="list-style-type:disc">Yapısal / Mekanik Departmanımız, <strong>15.11.22 - 15.12.22 </strong>tarihleri arasında <strong>SolidWorks</strong> isimli tasarım programında kendilerine orta-temel seviyeye ulaşma görevini atamış ve bunu başarılı bir şekilde gerçekleştirmişlerdir. İlgili programın seçimi, hem roket yarışması hem de diğer yarışmalarda kullanılabilecek ortak bir uygulama olup, departman üyelerinin gelecek iş hayatlarına önemli bir etki sağlayacağı göz önüne alınarak özellikle seçilmiştir. 
+
+Takım bu uygulamada hâlâ kendisini geliştirmekle birlikte (Teknofest özelinde <strong>OpenRocket</strong> programında) ve geleceğe yönelik <strong>Ansys</strong> isimli tasarım programında kendini geliştirmeyi planlamaktadır.</li></ul><ul id="dc6d7a43-01c0-4e72-b0a4-d1beddb26bec" class="bulleted-list"><li style="list-style-type:disc">Aviyonik Departmanımız, <strong>22.12.22 - 22.01.23 </strong>tarihleri arasında hem geleceğe yönelik farklı projelerde kazanılan tecrübe ve birikimi kullanabilmek hem de ilgili platformun esnekliğinden ve sahip olduğu performansından dolayı <strong>STM32</strong> üzerinde çalışmaya başlamıştır.
+
+Takımdaki Mekatronik Mühendisi ve Elektronik Mühendisi arkadaşlarımız da sahip oldukları bilgileri diğer arkadaşlarımıza canlı dersler şeklinde anlatmak için gerekli planlamaları yapmıştır. Bu durum aynı zamanda takım içi iletişimi de güçlendirmektedir.
+</li></ul><ul id="be97270f-5f9a-411d-821e-bd85b02603e3" class="bulleted-list"><li style="list-style-type:disc">Türk Roket Topluluğu, her ne kadar isminde “roket” kelimesini barındırsa da yapacağı projelerde ve katılacağı etkinliklerde sadece bu kelime içinde sıkışıp kalmamaya özen göstermektedir. Buna ithafen departmanlar farklı alanlara yönelik de tecrübeler edinmekte ve proje/etkinlikler yapmaktadır.</li></ul><p id="89d8e4a3-b1a8-4f8a-90e1-33b3bc95d69c" class="">
+</p><p id="333fb8ef-af7f-45f9-a12d-1107f544849d" class="">2024 Teknofest sürecimiz devam etmektedir.</p><p id="9abf7a1d-67e9-4108-be3b-8cc4196e5c62" class="">
+</p><h3 id="8a5e6a92-1e5c-404a-aa39-6f047b0c78c2" class="">Lise ve Üniversite Takımları :</h3><ul id="f93ec63f-9f89-4475-a951-1f0772630407" class="bulleted-list"><li style="list-style-type:disc">Türk Roket Topluluğu, “katma değeri yüksek projeler geliştirme” misyonu dahilinde, ilgili gerekli maddi ve manevi gücü bulduğu sürece üniversite ve liselerde kendi destekleriyle roket/uzay takımları kurmayı planlamaktadır. Bu plan doğrultusunda henüz kayda değer bir gelişme yaşanmamıştır.</li></ul><p id="7333eea9-324c-4ba9-95fe-45f64fc647f7" class="">
+</p><h3 id="46a97f3f-0030-436a-98bc-9b6d46c6534b" class="">Uluslararası Yarışmalar :</h3><ul id="114d04c3-def4-4bd3-9fd0-407b9b25cef5" class="bulleted-list"><li style="list-style-type:disc">Türk Roket Topluluğu, sadece Teknofest’e proje geliştirmeye çalışan yahut bu amaçla kurulan bir takım veya topluluk değildir. İlgili ekip tecrübesi ve deneyimden sonra topluluk, uluslarası yarışmalara da katılmayı planlamaktadır. Bu yarışmalardan en bilindik olanı IREC’dir.</li></ul><p id="0e72306c-1e91-49bf-a0e5-faaa4427513d" class="">
+</p><h3 id="8e301ef9-6ec9-45c3-bb62-2a8e73453083" class="">Özel Projeler :</h3><ul id="8d4ba1fd-8f6b-4607-b0e3-ba5a3bb9928c" class="bulleted-list"><li style="list-style-type:disc">Türk Roket Topluluğu, gerekli maddi ve manevi gücü bulmasının ardından, ilgili gönüllü arkadaşlarının da bilgisi ve isteği dahilinde kendine ait farklı projeler geliştirmek için altyapısını sürdürmektedir. Bu konuda “hibrit roket motoru geliştirme” ve “yapay zekalı roketler” anlamında çalışmalar yapmaktadır.</li></ul><p id="a0fafd93-47e7-40da-abec-b0a89d8eed35" class="">
+</p><hr id="1972fb8e-edf5-4550-a5e5-0a7617105e89"/><h2 id="fbf5f7c2-67a4-478e-8a4d-897940a08ef8" class="">Her Zaman Dezavantajı Avantaja Çevirme Fikri</h2><p id="c38e6019-0829-452b-90e0-7899a0a45666" class="">Türk Roket Topluluğu, diğer üniversite topluluklarının aksine birçok dezavantaja sahiptir. Bunlardan ilki ve en temeli yüzyüze proje geliştirme ve görüşme olarak söylenebilir. Ancak Topluluk her seferinde yaşadığı dezavantajları kendi lehine çevirmeye çalışmaktadır. </p><p id="f720a743-7331-4654-96cf-f08803110309" class="">
+</p><p id="20596ac1-9deb-46e6-8a2f-72e45a5e8ae9" class="">Ülkenin dört bir yanından Türk Roket Topluluğu’na katılan gönüllülerimiz, diğer üniversite topluluklarının aksine birçok farklı erişim olanaklarına sahiptir. Sadece olduğu yer ile kısıtlı kalmayan gönüllülerimiz, çevrelerindeki seminerler, webinarlar ve konferanslardan edindikleri bilgileri daha sonrasında toplulukta uygulama ve anlatma şansına sahip olmaktadırlar. Bu durum, ilgili yaşanan dezavantajların avantaja çevrilme konusunda Topluluğumuzun düşünce yapısını yeniden ortaya koymaktadır.</p><p id="e2f5b4fa-df45-42fb-8d6a-4c760a73e9a3" class="">
+</p><hr id="28041aaa-d683-4b86-b481-7f40f00d2214"/><h2 id="81591027-1f83-4625-99f9-a66077e83153" class="">Gönüllü Olmanın Dinamizmi :</h2><p id="10fccd51-cd9a-4d10-98b7-a5b2910da87b" class="">Türk Roket Topluluğu, her şeyden önce gönüllü bir topluluktur. Bu durum, Topluluğa bu alanda kendini geliştirmek ve gerçekten proje/etkinlik yapmak isteyen kişilerin katılmasını sağlamıştır. Bu nedenle topluluk, her geçen gün yeni etkinlik ve proje fikirleri bularak bunları gerçek hayatta uygulamaya çalışmaktadır. </p><p id="c7b07e35-8e1a-4afc-a4ee-346314af6114" class="">
+</p><hr id="0875c8f9-6e56-42e1-9fb2-a5807788643f"/><h2 id="46073eb1-5c39-4638-8499-2cfe0c07646e" class="">Topluluk İçi Hiyerarşi :</h2><p id="377fbdcf-81ca-409a-b1ee-04db9bbcdc17" class="">Departmanlar ve takımlar içinde/arasında kişiler için belirli bir hiyerarşi bulunmamaktadır. Bununla birlikte, takımların (ortak ve ortak olmayan işlerine göre) proje/etkinlik geliştirme durumlarında kendi içlerinde hiyerarşi oluşturmaları Türk Roket Topluluğu olarak (projenin/etkinliğin planlı ve düzgün ilerlemesi açısından) önerilmektedir.</p><p id="87060c8f-df7d-4666-b764-847ac2c68158" class="">
+</p><hr id="20dcbefc-78fc-4209-b6ea-7be4d2010986"/><h2 id="1be89fae-5c0c-4dd5-b93b-767328972ec5" class="">Topluluğa Katılım Gereklilikleri :</h2><h3 id="f543496f-1f7e-4f34-937a-fbbd795df0ca" class="">Yaş :</h3><p id="180c71db-58d3-45ae-b16b-8b8ba0333ab2" class="">Türk Roket Topluluğu, takımlarına gönüllü kişiler alırken herhangi bir yaş kısıtlaması sunmaz. Buna ek olarak kişiler yaşıtlarına, uygunluklarına, çevrelerine ve isteklerine göre farklı takımlarda yer alabilirler.</p><h3 id="4b3fafba-8d0e-46ca-a9d9-e0bc4fd44718" class="">Eğitim :</h3><p id="4d516a5b-520c-44a9-97f2-8c5705a6ea33" class="">Türk Roket Topluluğu, takımlarına gönüllü kişiler alırken eğitim durumu ile ilgili herhangi bir kısıtlama yapmaz. Bu sayede herkesin birbirinden bir şeyler öğrenebileceği mutualist bir havuz oluşturulur. (Ancak bu, alanında yetkin kişilerin proje/etkinliklere kaptanlık yapmasını engellemez.</p><p id="1f5e72c0-3a9b-4af2-b007-41aba310f8e5" class="">
+</p><hr id="8f4283a3-e727-4490-b64c-59d1cb1854e6"/><h2 id="a8c62d96-d9ce-479d-8566-500fb2db16d2" class="">Topluluk İçi Ücretlendirme :</h2><p id="26aac9d5-9698-4a5e-b6d4-c0f7e5edbda7" class="">Proje/etkinlik durumuna göre gönüllü kişilerin bazı durumlarda (ulaşım, konaklama) kendilerinin ödeme yapması gerekebilir. Ancak Türk Roket Topluluğu, gönüllü kişiler tarafından etkinlik/proje amacıyla faturalandırılmış maliyeti (imkanı durumunda) ödemek zorundadır. Gönüllü kişilerin mali durumları kötü amaçlar dahilinde kullanmaları anlaşıldığında, üyelerin toplulukla olan bağlantısı kesilir ve gerekli hukuki mecralara başvuru yapılır.</p><p id="b17cb6f3-045b-47aa-a5a5-8ff802e6a568" class="">
+</p><p id="318e1028-cc64-4271-a4a4-2a165127a54c" class="">Bunlara ek olarak etkinlik/proje yapımında maliyet önceden belirlenir ve herhangi bir olumsuz duruma hazırlanılarak planlanır.</p><p id="ced124ed-225e-4b16-900c-747d0beee03c" class="">
+</p><hr id="58a50f84-b851-4408-a474-399f1bade724"/><h2 id="07ec03bf-3898-43fb-b3f2-cbfdba62e6dd" class="">Çalışma Koşulları :</h2><p id="fdf16aa6-a580-4541-b34f-55ae2fb34848" class="">Türk Roket Topluluğu, gönüllü bir kişiyi isteği dışında bir projede yer alması için zor kullanmaz bu konuyu gönüllünün kararına bırakır. Ancak herhangi bir projeye/etkinliğe dahil olan gönüllü kişinin (bulunduğu takım gereği yapacağı görevlerin) planlanan tarihlere (başlangıç/bitiş) uyması beklenir.</p><p id="76489111-6017-4e5d-ad3a-f50a5b3b645b" class="">
+</p><p id="92c96d10-302d-4237-8c79-acb4916ae918" class="">Buna ek olarak gönüllülerin, dahil oldukları proje/etkinlik süresince tamamiyle takım değiştirmelerine izin verilmez. Bunun sebebi, kişilerin projede bir alanda zorlanıldığında, başka görevlere yönelmeleri ve bundan dolayı projenin yarım/eksik kalmasını engellemektir.</p><p id="33ffd820-e96e-4b9e-ae57-f6914149d8bd" class="">
+</p><p id="e60e66f5-40c8-49e0-aab1-b2fd9ef45fa0" class="">Gönüllüler, oldukları takımların yanında başka takımların görevlerini yapabilirler. Bu seçim kişinin kendisine bırakılmıştır. Ancak bu, eğer bulunduğu ana takımın görevlerini aksatacak düzeyde ise kişi yeni girdiği ikinci/üçüncü takımdan alınır.</p><p id="ae043f08-2b5b-4b1c-a7ac-678eb4cf2bf9" class="">
+</p><hr id="0156da59-910a-43b1-a033-eef58ba529e5"/><h2 id="901e9adc-c9b8-4c77-8ae9-e41610ac3f67" class="">Koruma Programı :</h2><p id="fd0c22c5-77ab-41ab-b5cb-0ac443297950" class="">Türk Roket Topluluğu, bünyesindeki gönüllü kişilerin yazdıkları yazıları/yazılımları ve konuşmalarını kendi ismiyle sahiplenmez. Bunları topluluğun sosyal medya platformlarında yazan/yapan kişilerin isimleriyle yayınlar. Bu şekilde topluluk adının değil, gönüllülerinin ön plana çıkmasına izin verir. Ayrıca tüm proje/etkinlik sürecinde gönüllülerinin yaptığı işleri (fotoğraf çekimleri/bilgisayar yazılımları dahil) telifleyerek bunların farklı platformlarda (yapımcısı/ların izinleri dışında) izinsiz kullanımını engeller.</p><h3 id="a3e5f03f-676c-4518-b993-12bcb48411d6" class="">TEKNİK :</h3><p id="31129351-2a18-4425-ab15-47347970f199" class="">Herhangi bir proje/etkinlik sürecinde bilgisayar ortamında yapılan tasarım ve yazılımların son hali topluluğun Github hesabına yüklenir. Türk Roket Topluluğu, Github hesabına yüklenmiş dosyaları (sonradan erişilmek üzere) korumakla yükümlüdür. Bunun dışındaki dosyaların durumu kişilere bağlıdır. Ayrıca dosyalar, topluluğun Github adresine yüklendikten sonra, proje/etkinlik sürecinin sonunda yapımcısı/ları tarafından farklı alanlarda kullanılabilir.</p><p id="c8a3adea-8437-4639-abc6-88a31d0468e3" class="">
+</p><p id="3409d3d9-32c6-449f-a8d4-4458e58ea0e8" class="">Buna ek olarak gönüllülerin birbirlerinden alacakları herhangi bir elektronik dosya için güvenliklerini sağlamak kendi görevleridir, topluluk sorunlu elektronik dosyaların oluşturduğu sıkıntıların sorumluluğunu almaz.</p><p id="41e0dcf7-b992-46ac-8d94-f87644d01b7d" class="">
+</p><hr id="d351607f-0f58-4e43-9535-a1b3acb1041d"/><h2 id="aee8c173-43c4-411d-a25e-b3bfe2c182af" class="">Güvenlik Önlemleri :</h2><p id="96d9159a-f432-4c90-adee-2228fbf49f02" class="">Türk Roket Topluluğu, saha/teknik takımında yer alan kişilerin sağlık tehlikesini (ihmalsiz) minimuma indirmekle sorumludur.</p><p id="3c38da29-da0c-4cde-85f8-cd586a967277" class="">
+</p><p id="0544ab81-47e8-449a-88b7-1a370adade5a" class="">Etkinlik/proje planlamalarında güvenlik önemli bir kriterdir. Ancak topluluk, kişilerin etkinlik/proje sürecinde yaşayacakları yaralanmaları üstlenmez.</p><p id="8d042a61-93bf-4df0-b917-e4970196d2f7" class="">
+</p><p id="f47146cd-107d-4fb1-bd6d-128e98eb6093" class="">Türk Roket Topluluğu, yaşanan yaralanmaların sebeplerini/sonuçlarını not alarak gelecek proje/etkinlikler için aynı durumların yaşanmaması için önlemler almakla sorumludur.</p><p id="77833184-6673-42cb-86db-081523f1f8f1" class="">
+</p><h3 id="78162b0a-48be-40b7-a759-020e43d69d27" class="">SAHA :</h3><p id="a596a88a-1932-44e1-8865-852a2f7de112" class="">Gereken tüm güvenlik ekipmanlarının topluluk tarafından karşılanması henüz proje/etkinlik planlama sürecinden itibaren başlar.</p><p id="117bda24-5262-4446-93e9-916bab024b60" class="">Bu ekipmanlara; kasket, koruyucu gözlük, önlük vb. dahil edilebilir.</p><p id="a409f343-9947-40f4-a96a-a62e23cb7ecd" class="">
+</p><h3 id="4b8a8d82-a160-413a-ad0c-7730af1cdffb" class="">TEKNİK :</h3><p id="e721a174-02ae-4d8e-90ed-007526b993ee" class="">Github hesabına yüklenmeyen verilerin güvenliği tamamıyla kişilerin sorumluluğu dahilindedir. Türk Roket Topluluğu, gönüllü kişilerin bilgisayarlarına kuracakları programlar ve 3. parti yazılımlar hakkında bir önlem almaz ve öneri vermez.</p><p id="45e9fad0-c5c3-4c8c-a1a0-d967d78dbe8e" class="">
+</p><hr id="bd9e5fb1-c25b-4d5d-9c17-cd592d9ad1a6"/><h2 id="efa4f607-fcd8-4942-849c-83429f36e5e8" class="">Konum :</h2><p id="76ad9396-cd7d-41da-b474-67d55ea20f61" class="">Türk Roket Topluluğu, ana merkezini atölyesinin bulunduğu yer olarak belirler (sonradan değişme ihtimali göz önünde bulundurulmalıdır) ve bunu açıkça beyan eder.</p><p id="840bd60f-5f94-49ff-9c74-2152af025b2f" class=""><strong>ATÖLYE ADRESİ :</strong></p><p id="0c11bf84-2b1e-4fbf-bf35-ed94552dd0bf" class="">Runguçpaşa Mahallesi, Karacabey/BURSA</p><p id="e9daf557-0422-409c-a41b-5d398295fdb3" class="">
+</p><hr id="05886b00-de78-4305-b54e-11b3fa7deaed"/><h1 id="fc1caab8-a3e6-4653-9c5e-544f83b3dc1b" class="">Bu Belge Hakkında :</h1><p id="dd9e2877-03d8-4a21-ac7c-16e41bcfd8b1" class="">Bu belge Türk Roket Topluluğu’nun geçmişini, vizyonunu ve gelecek yol haritasını tanıtmak amacıyla topluluk kurucusu Berkay Eren EMİN tarafından <strong>10.01.2023</strong> tarihinde hazırlanmıştır.</p><p id="daf975b0-5a0e-43e5-95c7-ff447aeffb0a" class="">
+</p><p id="069e34d3-b1cf-474c-85bb-c70c433e99b8" class="">
+</p><p id="4625dfd5-286f-43e1-9f07-6e6c2979d5c5" class="">
+</p><p id="daf40aa1-0dcd-486a-bc0d-66a147dac870" class="">
+</p></div></article></body></html>
