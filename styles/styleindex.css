@@ -2,7 +2,7 @@
 
 .blog-main{
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 65% 30%;
     height:calc(100vh - 5rem);
     padding-left: 50px;
     padding-top: 20px;
@@ -46,7 +46,6 @@
     overflow: scroll;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #c0c3c7;
     padding-bottom:50px;
 }
 
@@ -57,7 +56,12 @@
 }
 
 .container{
-    margin-right:50px; 
+    margin-right:50px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top:30px;
 }
 
 @media screen and (max-width:660px){
@@ -149,10 +153,11 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: auto;
-    border-bottom: 1px solid #c0c3c7;
     padding-top: 14px;
     padding-bottom:14px;
 }
+
+
 
 .container a svg {
     width: 20px;
@@ -166,11 +171,11 @@
 
 .right-containers{
     overflow: auto;
-    height:calc(100vh - 250px);
+    height:calc(100vh - 10rem);
     padding-bottom:20px;
 }
 
-.right-container img{
+.right-container img:not(.creative-img){
     border-radius: 10px;
     height: 15vh;
     /*max-height: 22vh;*/
@@ -181,7 +186,11 @@
 .right-container{
     padding-left:20px;
     padding-right:55px;
-    border-bottom:1px solid #c0c3c7;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    margin-bottom:20px;
+    padding:20px; 
 }
 
 @media screen and (max-width:1405px){
@@ -239,19 +248,20 @@
     }
 }
 
-.privacy-main{
-    margin-left:50px;
+.creative-img{
+    height: 50px;
 }
 
 .creative-commons{
-    padding-top: 10px;
-    padding-left:20px;
-    padding-right: 50px;
-    /* padding-bottom: 10px; */
     font-size:14px;
-    /* border-bottom: 1px solid #94918f; */
-}
-.creative-commons + .creative-commons{
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
+.about-header{
+    font-size: 20px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
+    margin-top:20px;
+    margin-bottom:8px;
+}
