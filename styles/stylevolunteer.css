@@ -16,6 +16,16 @@
     }
 }
 
+@media screen and (max-width:680px){
+    .menu{
+        margin:0;
+        height:100%;
+        font-size: 8px;
+        max-width: 30px;
+        border-radius: 0%;
+    }
+}
+
 .volunteerpage-container{
     width: 100%;
     overflow: scroll;
