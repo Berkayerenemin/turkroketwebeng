@@ -120,7 +120,7 @@
         max-width: 30px;
         border-radius: 0%;
     }
-    
+
 }
 
 @media screen and (max-width:540px){
@@ -201,6 +201,7 @@
     overflow: auto;
     height:calc(100vh - 10rem);
     padding-bottom:20px;
+    padding-right:7px;
 }
 
 .right-container img:not(.creative-img){
