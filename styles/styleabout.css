@@ -1,9 +1,9 @@
 @import url("stylemain.css");
 
 .about-main{
-    height:calc(100vh - 7rem);
     display: grid;
     grid-template-columns: 60% 40%;
+    height:calc(100vh - 7rem);
     padding-left: 50px;
     padding-top: 20px;
 }

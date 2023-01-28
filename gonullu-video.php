@@ -76,7 +76,7 @@
             <!--<span>Türk Roket Topluluğu</span>-->
         </a>
         <a href="gizlilik.html" class="menu-name menuprivacy"> 
-            <img src="./assets/privacy.png" alt="privacy-turkroket">
+            <i data-feather="shield"></i>
         </a>
     </div>
 
