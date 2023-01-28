@@ -17,10 +17,9 @@
 
 .old-as{
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #c0c3c7;
     padding-bottom:50px;
 }
 
@@ -56,7 +55,7 @@
 .newas{
     height: 810px;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     margin-left:20px;
 }
 
@@ -98,6 +97,23 @@
     .mobile-calendar{
         display: contents;
     }
+
+	.main-header{
+        width:calc(100% - 100px);
+    }
+	.box{
+		width:90%;
+	}
+}
+
+@media screen and (max-width:680px){
+    .menu{
+        margin:0;
+        height:100%;
+        font-size: 8px;
+        max-width: 30px;
+        border-radius: 0%;
+    }
 }
 
 .teams{
@@ -108,7 +124,7 @@
 
 .box{
 	position: relative;
-	width: 80%;
+	width: 95%;
 	height: 50%;
 	background: transparent;
 	border-radius: 8px;

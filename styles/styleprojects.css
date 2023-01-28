@@ -3,9 +3,9 @@
 .project-main{
     display: grid;
     grid-template-columns: 65% 35%;
-    height:calc(100vh - 5rem);
     padding-left: 50px;
     padding-top: 20px; 
+    height:calc(100vh - 1rem)
 }
 
 @media screen and (max-width:1028px){
@@ -13,14 +13,18 @@
         display: grid;
         grid-template-columns: 100%;
     }
+
+    .main-header{
+        width:calc(100% - 100px);
+    }
 }
 
 .old-projects{
     width: 100%;
-    overflow: scroll;
+    height:100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #c0c3c7;
     padding-bottom:50px;
 }
 
@@ -39,11 +43,15 @@
     display: flex;
     justify-content:center;
     text-align: center;
+    height:100%;
     margin-right:50px;
-    height: 100vh;
     border-radius: 10px;
     align-items: center;
-    background-color:#f9f9f9;
+    /*background-color:#f9f9f9;*/
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
 }
 
 @media screen and (max-width:1028px){
@@ -52,11 +60,25 @@
     }
 }
 
+@media screen and (max-width:680px){
+    .menu{
+        margin:0;
+        height:100%;
+        font-size: 8px;
+        max-width: 30px;
+        border-radius: 0%;
+    }
+}
+
 .newproject-image{
-    height: auto;
-    width: 400px;
+    max-height: 700px;
+    max-width: 350px;
+    min-height: 500px;
+    min-width:200px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 10px;
-    display: block;
+    /*display: block;*/
     object-fit: contain;
     /*margin-bottom:auto;*/
     /*max-height: 22vh;*/
@@ -86,16 +108,20 @@
     display: flex;
     flex-direction: column;
     /*justify-content:center;*/
-    text-align: center;
     margin-right:50px;
     height:100%;
+}
+
+.new-project p{
+    padding:20px;
+    background-color: #fff;
     border-radius: 10px;
-    align-items: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
 }
 
 .newprojects{
     height:100%;
-    overflow: scroll;
+    overflow: hidden;
     width: 100%;
     margin-left:20px;
 }

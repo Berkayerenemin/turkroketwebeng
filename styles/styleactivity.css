@@ -14,14 +14,28 @@
         display: grid;
         grid-template-columns: 100%;
     }
+
+    .main-header{
+        width:calc(100% - 100px);
+    }
+}
+
+@media screen and (max-width:680px){
+    .menu{
+        margin:0;
+        height:100%;
+        font-size: 8px;
+        max-width: 30px;
+        border-radius: 0%;
+    }
 }
 
 .old-as{
     width: 100%;
     overflow: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #c0c3c7;
     padding-bottom:50px;
 }
 
@@ -56,10 +70,14 @@
 }
 
 .newas{
-    height: 810px;
-    width: 100%;
-    overflow: scroll;
+    height:calc(100% - 1rem);
+    width: 95%;
+    overflow: hidden;
     margin-left:20px;
+    padding-left:20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
 }
 
 .takvim{
