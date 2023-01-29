@@ -69,15 +69,47 @@
     }
 }
 
+.itemcalendar{
+    border-radius: 10px;
+    background-color:#f9f9f9;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    padding:20px;
+}
+
+@media screen and (max-width:1028px){
+    .itemcalendar{
+        margin-right:50px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .itemcalendar{
+        background-color:transparent;
+        box-shadow:none;
+        padding:0;
+    }
+}
+
+.new-act p{
+    border-radius: 10px;
+    background-color:#f9f9f9;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    padding:20px;
+    margin-bottom:10px;
+}
+
+@media screen and (max-width:1028px){
+    .new-act p{
+        margin-right:50px;
+    }
+}
+
 .newas{
     height:calc(100% - 1rem);
     width: 95%;
     overflow: hidden;
     margin-left:20px;
     padding-left:20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
 }
 
 .takvim{

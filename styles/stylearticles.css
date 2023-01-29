@@ -1,10 +1,10 @@
 @import url("stylemain.css");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic");
 
 .article-main{
     display: grid;
     grid-template-columns: 65% 35%;
-    height:calc(100vh - 5rem);
+    height:calc(100vh - 8rem);
     padding-left: 50px;
     padding-top: 20px; 
 }
@@ -16,8 +16,18 @@
     }
 }
 
+.author-pocket{
+    padding-left: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
+}
+
 .article-container{
-    overflow: scroll;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     padding-bottom:50px;

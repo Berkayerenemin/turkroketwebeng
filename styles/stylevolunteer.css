@@ -3,7 +3,7 @@
 .volunteerpage-main{
     display: grid;
     grid-template-columns: 65% 35%;
-    height:calc(100vh - 5rem);
+    height:calc(100vh - 9rem);
     padding-left: 50px;
     padding-top: 20px; 
 }
@@ -28,7 +28,7 @@
 
 .volunteerpage-container{
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #c0c3c7;
@@ -120,9 +120,9 @@
 }
 
 .volunteers{
-    height: 98%;
+    height:calc(100%);
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     margin-left:20px;
 }
 

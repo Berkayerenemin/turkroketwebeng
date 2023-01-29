@@ -15,52 +15,46 @@
 
     <title>Türk Roket Topluluğu | İnternet Adresimiz</title>
     <link rel="stylesheet" href="./styles/stylearticles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
     <div class="menu">
         <a href="index.html" class="menu-name first">
-            <img src="./assets/home.png" alt="anasayfa-turkroket">
-            <span>Ana Sayfa</span>
+            <i data-feather="home"></i>
         </a>
         <a href="hakkimizda.html" class="menu-name">
-            <img src="./assets/info.png" alt="anasayfa-turkroket">
-            <span>Hakkımızda</span>
+            <i data-feather="info"></i>
         </a>
         <a href="projelerimiz.html" class="menu-name">
-            <img src="./assets/proje.png" alt="anasayfa-turkroket">
-            <span>Projelerimiz</span>
+            <i data-feather="cpu"></i>
         </a>
         <a href="etkinliklerimiz.html" class="menu-name">
-            <img src="./assets/calendar.png" alt="anasayfa-turkroket">
-            <span>Etkinliklerimiz</span>
+            <i data-feather="calendar"></i>
         </a>
         <a href="egitim.html" class="menu-name">
-            <img src="./assets/play.png" alt="anasayfa-turkroket">
-            <span>Eğitim</span>
+            <i data-feather="play-circle"></i>
         </a>
         <a href="blog.html" class="menu-name">
-            <img src="./assets/pencil.png" alt="anasayfa-turkroket">
-            <span>Blog</span>
+            <i data-feather="edit"></i>
         </a>
         <a href="" class="menu-name">
-            <img src="./assets/download.png" alt="blog-turkroket">
-            <span>İndirilebilir</span>
+            <i data-feather="download"></i>
         </a>
         <a href="gonulluol.html" class="menu-name">
-            <img src="./assets/rocket.png" alt="anasayfa-turkroket">
-            <span>Gönüllü Ol</span>
+            <i data-feather="user-plus"></i>
         </a>
         <a href="https://www.instagram.com/turkroket/" class="menu-name mention">
-            <img src="./assets/instagram.png" alt="anasayfa-turkroket">
-            <span>@turkroket</span>
+            <i data-feather="instagram"></i>
+        </a>
+        <a href="" class="menu-name">
+            <i data-feather="youtube"></i>
         </a>
         <a href="https://kreosus.com/turkroket" class="menu-name support">
-            <img src="./assets/donate.png" alt="anasayfa-turkroket">
-            <span>Destekle</span>
+            <i data-feather="heart"></i>
         </a>
         <a href="gizlilik.html" class="menu-name menuprivacy"> 
-            <img src="./assets/privacy.png" alt="anasayfa-turkroket">
+            <i data-feather="shield"></i>
         </a>
     </div>
 
@@ -91,15 +85,17 @@
 
                 <div class="article-right-containers">
                     <h3 class="about-header">YAZAR HAKKINDA:</h3>
-                    <h4>Türk Roket Topluluğu</h4>
-                    <div id="turbojet-three">
+                    <div class="author-pocket">
+                        <h4>Türk Roket Topluluğu</h4>
+                        <div id="turbojet-three">
 
-                        <img id="turbojet-img-three" src="./assets/favicon.png" alt="logo">
-                        
-                        <div id="author">
-                            <p>Türk Roket Topluluğu, kuruluşu 2017’ye dayanan ve Türkiye’de roket bilimini genç, yaşlı; eğitimli, eğitimsiz ayrımı yapmadan anlatmaya çalışan bir topluluktur.</p>
+                            <img id="turbojet-img-three" src="./assets/favicon.png" alt="logo">
+                            
+                            <div id="author">
+                                <p>Türk Roket Topluluğu, kuruluşu 2017’ye dayanan ve Türkiye’de roket bilimini genç, yaşlı; eğitimli, eğitimsiz ayrımı yapmadan anlatmaya çalışan bir topluluktur.</p>
+                            </div>
+
                         </div>
-
                     </div>
                     <h3 class="about-header">YORUMLAR:</h3>
                     <div class="powr-comments" id="500e5747_1665662904"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
@@ -111,6 +107,9 @@
     <div>
 
     </div>
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>
