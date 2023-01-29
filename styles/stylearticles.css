@@ -53,6 +53,16 @@
     }
 }
 
+@media screen and (max-width:680px){
+    .menu{
+        margin:0;
+        height:100%;
+        font-size: 8px;
+        max-width: 30px;
+        border-radius: 0%;
+    }
+}
+
 .article-container p {
     line-height: 1.5;
     margin: 14px 0;
