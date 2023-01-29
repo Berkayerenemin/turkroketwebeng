@@ -86,10 +86,6 @@
     padding-right:20px;
 }
 
-.right-container + .right-container{
-    margin-bottom:50px;
-}
-
 @media screen and (max-width:1405px){
     .right-container{
         margin-right: 20px;
