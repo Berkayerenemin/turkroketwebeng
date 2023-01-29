@@ -6,7 +6,7 @@
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="Türk Roket Topluluğu, kuruluşu 2017’ye dayanan ve Türkiye’de roket bilimini genç, yaşlı; eğitimli, eğitimsiz ayrımı yapmadan anlatmaya çalışan bir topluluktur. ">
     <meta name="keywords" content="rockets, science, turkroket, Turkey, space, uzay, roket, bilim, teknik, teknoloji">
     <meta name="author" content="Türk Roket Topluluğu">
@@ -29,51 +29,36 @@
     <div class="menu">
         <a href="index.html" class="menu-name first">
             <i data-feather="home"></i>
-            <!--<span>Ana Sayfa</span>-->
         </a>
         <a href="hakkimizda.html" class="menu-name">
             <i data-feather="info"></i>
-            <!--<span>Hakkımızda</span>-->
         </a>
         <a href="projelerimiz.html" class="menu-name">
             <i data-feather="cpu"></i>
-            <!--<span>Projelerimiz</span>-->
         </a>
         <a href="etkinliklerimiz.html" class="menu-name">
             <i data-feather="calendar"></i>
-            <!--<span>Etkinliklerimiz</span>-->
         </a>
         <a href="egitim.html" class="menu-name">
             <i data-feather="play-circle"></i>
-            <!--<span>Eğitim</span>-->
         </a>
         <a href="blog.html" class="menu-name">
             <i data-feather="edit"></i>
-            <!--<span>Blog</span>-->
         </a>
         <a href="" class="menu-name">
             <i data-feather="download"></i>
-            <!--<span>İndirilebilir</span>-->
         </a>
         <a href="gonulluol.html" class="menu-name">
             <i data-feather="user-plus"></i>
-            <!--<span>Gönüllü Ol</span>-->
-        </a>
-        <a href="cikis.php" class="menu-name">
-        <i data-feather="log-out"></i>
-            <!--<span>Çıkış</span>-->
         </a>
         <a href="https://www.instagram.com/turkroket/" class="menu-name mention">
             <i data-feather="instagram"></i>
-            <!--<span>@turkroket</span>-->
         </a>
-        <a href="" class="menu-name support">
+        <a href="" class="menu-name">
             <i data-feather="youtube"></i>
-            <!--<span>Türk Roket Topluluğu</span>-->
         </a>
         <a href="https://kreosus.com/turkroket" class="menu-name support">
             <i data-feather="heart"></i>
-            <!--<span>Türk Roket Topluluğu</span>-->
         </a>
         <a href="gizlilik.html" class="menu-name menuprivacy"> 
             <i data-feather="shield"></i>
@@ -87,22 +72,17 @@
 
         <div class="about-main">
             <div class="videos">
-                <h1>STM32 ile ARM programlama :</h1>
+                <h1>STM32 ile ARM programlama:</h1>
                 <br>
         
                 <div class="videos-container">
                   <!-- Single Video starts -->
                     <div class="video">
                         <div class="video-thumbnail">
-                            <iframe width="225" height="125" src="https://www.youtube.com/embed/QH-qpNTTv6w?modestbranding=1&rel=0" 
-                            allowfullscreen="allowfullscreen"
-                            mozallowfullscreen="mozallowfullscreen" 
-                            msallowfullscreen="msallowfullscreen" 
-                            oallowfullscreen="oallowfullscreen" 
-                            webkitallowfullscreen="webkitallowfullscreen"
-                            frameborder="0"
-                            name="STM32 ile ARM programlama"></iframe>
-                            <!--<img src="./assets/edu/stm1.png" alt="" />-->
+                            <!--<a href="./assets/videos/stm/stm32-1.mp4">-->
+                                <iframe width="225" height="125" src="https://www.youtube.com/embed/QH-qpNTTv6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <!--<img src="./assets/edu/stm1.png" alt="" />
+                            </a>-->
                         </div>
                         <div class="video-details">
                             <!--<div class="author">
@@ -118,7 +98,7 @@
 
                     <div class="video">
                         <div class="video-thumbnail">
-                            <img src="./assets/edu/stm2.png" alt="" />
+                            <iframe width="225" height="125" src="https://www.youtube.com/embed/zMLjRCO7WQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="video-details">
                             <!--<div class="author">
@@ -134,7 +114,8 @@
 
                     <div class="video">
                         <div class="video-thumbnail">
-                            <img src="./assets/edu/stm3.png" alt="" />
+                            <iframe width="225" height="125" src="https://www.youtube.com/embed/eTtJtEhza78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                         </div>
                         <div class="video-details">
                             <!--<div class="author">
@@ -150,7 +131,7 @@
 
                     <div class="video">
                         <div class="video-thumbnail">
-                            <img src="./assets/edu/stm4.png" alt="" />
+                            <iframe width="225" height="125" src="https://www.youtube.com/embed/Vjysxra64fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="video-details">
                             <!--<div class="author">
@@ -166,7 +147,7 @@
 
                     <div class="video">
                         <div class="video-thumbnail">
-                            <img src="./assets/edu/stm5.png" alt="" />
+                            <iframe width="225" height="125" src="https://www.youtube.com/embed/r6to1EqC87U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="video-details">
                             <!--<div class="author">
@@ -180,19 +161,58 @@
                         </div>
                     </div>
                 </div>
-                <hr>
+
                 <br>
-                <h1>Canva ile tasarım uygulamaları:</h1>    
+                <h1>Canva ile tasarım uygulamaları:</h1>  
+                <br>  
                 <div class="videos-container">
-                    
-                </div>
+                    <div class="video">
+                        <div class="video-thumbnail">
+                            <iframe width="225" height="125" src="https://www.youtube.com/embed/WG7emEzieL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-details">
+                            <!--<div class="author">
+                                <img src="./assets/favicon.png" alt="" />
+                            </div>-->
+                            <div class="title">
+                                <h3>CANVA ile tasarım uygulamaları  - Berkay Eren Emin - Ders 1
+                                </h3>
+                                <span>24:04 • 23.01.2023</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="videos-container">
-                
-                </div>
+                    <div class="video">
+                        <div class="video-thumbnail">
+                            <iframe width="225" height="125" src="https://www.youtube.com/embed/s28bd8gxkvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-details">
+                            <!--<div class="author">
+                                <img src="./assets/favicon.png" alt="" />
+                            </div>-->
+                            <div class="title">
+                                <h3>CANVA ile tasarım uygulamaları - Berkay Eren Emin - Ders 2
+                                </h3>
+                                <span>19:57 • 23.01.2023</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="videos-container">
-                
+                    <div class="video">
+                        <div class="video-thumbnail">
+                            <iframe width="225" height="125" src="https://www.youtube.com/embed/F_UHdR9Wqec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-details">
+                            <!--<div class="author">
+                                <img src="./assets/favicon.png" alt="" />
+                            </div>-->
+                            <div class="title">
+                                <h3>CANVA ile tasarım uygulamaları - Berkay Eren Emin - Ders 3
+                                </h3>
+                                <span>22:33 • 23.01.2023</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 
