@@ -14,59 +14,49 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 
     <title>Türk Roket Topluluğu | Turbojet Motorlar</title>
-    <link rel="stylesheet" href="./styles/stylearticles.css">
+    <link rel="stylesheet" href="./styles/articles.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-    <div class="menu">
-        <a href="index.html" class="menu-name first">
-            <i data-feather="home"></i>
-        </a>
-        <a href="hakkimizda.html" class="menu-name">
-            <i data-feather="info"></i>
-        </a>
-        <a href="projelerimiz.html" class="menu-name">
-            <i data-feather="cpu"></i>
-        </a>
-        <a href="etkinliklerimiz.html" class="menu-name">
-            <i data-feather="calendar"></i>
-        </a>
-        <a href="egitim.html" class="menu-name">
-            <i data-feather="play-circle"></i>
-        </a>
-        <a href="blog.html" class="menu-name">
-            <i data-feather="edit"></i>
-        </a>
-        <a href="" class="menu-name">
-            <i data-feather="download"></i>
-        </a>
-        <a href="gonulluol.html" class="menu-name">
-            <i data-feather="user-plus"></i>
-        </a>
-        <a href="https://www.instagram.com/turkroket/" class="menu-name mention">
-            <i data-feather="instagram"></i>
-        </a>
-        <a href="" class="menu-name">
-            <i data-feather="youtube"></i>
-        </a>
-        <a href="https://kreosus.com/turkroket" class="menu-name support">
-            <i data-feather="heart"></i>
-        </a>
-        <a href="gizlilik.html" class="menu-name menuprivacy"> 
-            <i data-feather="shield"></i>
-        </a>
-    </div>
+    <div class="mobile">
+        <div class="mobile-2">
+            <div class="mobile-mainheader">
+                <div class="mobile-menu">
+                    <input id="toggle" type="checkbox">
 
-    <div class="blog">
-
-        <div class="main-header">
-            <!--<div class="header">Türk Roket Topluluğu</div>-->
-            <img class="header-image" src="./assets/baslik.png" alt="logo">
-        </div>
-
-        <div class="article-main">
-            <div class="article-container">
+                    <label class="toggle-container" for="toggle">
+                        <span class="button button-toggle"></span>
+                    </label>
+                    <nav class="nav">
+                        <a class="nav-item" href="./index.html">Anasayfa</a>
+                        <a class="nav-item" href="./hakkimizda.html">Hakkımızda</a>
+                        <a class="nav-item" href="./projelerimiz.html">Projelerimiz</a>
+                        <a class="nav-item" href="./etkinliklerimiz.html">Etkinliklerimiz</a>
+                        <a class="nav-item" href="./egitim.html">Eğitim</a>
+                        <a class="nav-item" href="./blog.html">Blog</a>
+                        <a class="nav-item"><del>İndirilebilir</del></a>
+                        <a class="nav-item" href="./gonulluol.html">Gönüllü Ol</a>
+                        <a class="nav-item" href="./bildir.html">Hata Bildir</a>
+                        <a class="nav-item" href="https://www.instagram.com/turkroket/">Instagram</a>
+                        <a class="nav-item" href="https://www.youtube.com/channel/UCZxxGNj_sL4eoJxKW0xS7mg">Youtube</a>
+                        <a class="nav-item" href="https://discord.gg/A8Ap3hN">Discord</a>
+                        <a class="nav-item" href="https://kreosus.com/turkroket">Destek Ol</a>
+                        <a class="nav-item" href="./gizlilik.html">Gizlilik</a>
+                    </nav>
+                </div>
+                <div class="mobile-header">
+                    <a href="./index.html">
+                        <img class="mobile-headerimg" src="./assets/baslik.png" alt="logo">
+                    </a>
+                    <label class="mode-control">
+                        <input id="mode-btn2" type="checkbox">
+                        <span><i data-feather="moon"></i></span>
+                        <span><i data-feather="sun"></i></span>
+                    </label>
+                </div>
+            </div>
+            <div class="mobile-body">
                 <p id="article-header">TURBOJET MOTORLAR</p>
                 <!--<div class="article-container-detail">
                     <span class="writer">Yazar: Emin Emoğlu</span>
@@ -80,7 +70,7 @@
                 <br>
                 <div id="turbojet-one">
                     <img src="./assets/articles/turbojet2.png" id="turbojet-img-one" alt="">
-                    <p id="p2">Temel mantığı oldukça basittir. Hava, belirli bir basınca ve sıcaklığa getirilmek üzere difüzörde yavaşlatılır. Sonrasında kompresöre iletilir. Kompresör sayesinde hava, -motorun çevresindeki hava basıncına oranla- 3 ila 12 katı kadar sıkıştırılır. -sıkıştırılan bu havanın aynı zamanda sıcaklığı da artar- </p>
+                    <p>Temel mantığı oldukça basittir. Hava, belirli bir basınca ve sıcaklığa getirilmek üzere difüzörde yavaşlatılır. Sonrasında kompresöre iletilir. Kompresör sayesinde hava, -motorun çevresindeki hava basıncına oranla- 3 ila 12 katı kadar sıkıştırılır. -sıkıştırılan bu havanın aynı zamanda sıcaklığı da artar- </p>
                 </div>
                 <br>
                 <p>
@@ -97,33 +87,154 @@
                 <blockquote>
                     <span>Kaynakça:</span>
                 </blockquote>
-            </div>
-            <div class="article-right-container">
+                <h3 class="about-header">YAZAR HAKKINDA:</h3>
+                <div class="author-pocket">
+                    <h4><a href="./berkayerenemin.html" class="link">Berkay Eren Emin</a></h4>
+                    <div id="turbojet-three">
 
-                <div class="article-right-containers">
-                    <h3 class="about-header">YAZAR HAKKINDA:</h3>
-                    <div class="author-pocket">
-                        <h4><a href="./berkayerenemin.html" class="link">Berkay Eren Emin</a></h4>
-                        <div id="turbojet-three">
-
-                            <img id="turbojet-img-three" src="./assets/volunteers/berkayerenemin.jpg" alt="logo">
-                            
-                            <div id="author">
-                                <p>Mühendisliğe ve teknolojiye olan ilgisi 10 yaşından itibaren başladı. 8 sene boyunca BİLSEM'de resim öğrencisi olarak eğitim aldı. İlk web sitesini 2015 yılında ve henüz 12 yaşındayken kurdu.</p>
-                            </div>
+                        <img id="turbojet-img-three" src="./assets/volunteers/berkayerenemin.jpg" alt="logo">
+                        
+                        <div id="author">
+                            <p>Mühendisliğe ve teknolojiye olan ilgisi 10 yaşından itibaren başladı. 8 sene boyunca BİLSEM'de resim öğrencisi olarak eğitim aldı. İlk web sitesini 2015 yılında ve henüz 12 yaşındayken kurdu.</p>
                         </div>
                     </div>
-                    <h3 class="about-header">YORUMLAR:</h3>
-                    <div class="powr-comments" id="fbc7d55c_1663702363"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
                 </div>
-
             </div>
         </div>
     </div>
-    <div>
+    <div class="non-mobile">
+        <div class="menu">
+            <a href="index.html" class="menu-name" title="Anasayfa">
+                <i data-feather="home"></i>
+            </a>
+            <a href="hakkimizda.html" class="menu-name" title="Hakkımızda">
+                <i data-feather="info"></i>
+            </a>
+            <a href="projelerimiz.html" class="menu-name" title="Projelerimiz">
+                <i data-feather="cpu"></i>
+            </a>
+            <a href="etkinliklerimiz.html" class="menu-name" title="Etkinliklerimiz">
+                <i data-feather="calendar"></i>
+            </a>
+            <a href="egitim.html" class="menu-name" title="Eğitim">
+                <i data-feather="play-circle"></i>
+            </a>
+            <a href="blog.html" class="menu-name" title="Blog">
+                <i data-feather="edit"></i>
+            </a>
+            <!--<a class="menu-name" title="İndirilebilir">
+                <i data-feather="download"></i>
+            </a>-->
+            <a href="gonulluol.html" class="menu-name" title="Gönüllü Ol">
+                <i data-feather="user-plus"></i>
+            </a>
+            <a href="bildir.html" class="menu-name" title="Geri Bildirim">
+                <i data-feather="alert-triangle"></i>
+            </a>
+            <a href="https://www.instagram.com/turkroket/" class="menu-name mention" title="Türk Roket Topluluğu - Instagram">
+                <i data-feather="instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCZxxGNj_sL4eoJxKW0xS7mg" class="menu-name" title="Türk Roket Topluluğu - Youtube">
+                <i data-feather="youtube"></i>
+            </a>
+            <a href="https://kreosus.com/turkroket" class="menu-name support" title="Türk Roket Topluluğu - Destek">
+                <i data-feather="heart"></i>
+            </a>
+            <a href="gizlilik.html" class="menu-name menuprivacy" title="Türk Roket Topluluğu - Privacy"> 
+                <i data-feather="shield"></i>
+            </a>
+        </div>
 
+        <div class="blog">
+
+            <div class="main-header">
+                <!--<div class="header">Türk Roket Topluluğu</div>-->
+                <a href="./index.html">
+                    <img class="header-image" src="./assets/baslik.png" alt="logo">
+                </a>
+                <label class="mode-control">
+                    <input id="mode-btn" type="checkbox">
+                    <span><i data-feather="moon"></i></span>
+                    <span><i data-feather="sun"></i></span>
+                </label>
+            </div>
+    
+            <div class="article-main">
+                <div class="article-container">
+                    <p id="article-header">TURBOJET MOTORLAR</p>
+                    <!--<div class="article-container-detail">
+                        <span class="writer">Yazar: Emin Emoğlu</span>
+                        <span class="reading-time">Okuma Süresi: 5 Dakika</span>
+                    </div>-->
+                    <img class="article-main-img" src="./assets/articles/turbojet-motorlar-kapak.png" alt="">
+                    <br>
+                    <p id="p1">
+                        Turbo, Latince “yüksek hızda dönen”, jet ise yine aynı dilde “fırlatmak” anlamına gelmektedir. Turbojet havacılık sektöründe geniş kullanım alanına sahip bir jet motoru tipidir. Aşağıda turbojetlerin genel bir şematik resmi görülmektedir.
+                    </p>
+                    <br>
+                    <div id="turbojet-one">
+                        <img src="./assets/articles/turbojet2.png" id="turbojet-img-one" alt="">
+                        <p id="p2">Temel mantığı oldukça basittir. Hava, belirli bir basınca ve sıcaklığa getirilmek üzere difüzörde yavaşlatılır. Sonrasında kompresöre iletilir. Kompresör sayesinde hava, -motorun çevresindeki hava basıncına oranla- 3 ila 12 katı kadar sıkıştırılır. -sıkıştırılan bu havanın aynı zamanda sıcaklığı da artar- </p>
+                    </div>
+                    <br>
+                    <p>
+                        Sıkıştırılan hava, yakıt deposundan yanma odasına gelen yakıt ile karıştırılarak sabit basınçla yakılır. Yanma sırasında karışımın sıcaklığı 1300 F'a (704 C) kadar yükselir. Hava-yakıt karışımı yanma işlemi sonrasında türbin kısmına doğru iletilir. İletilen gazdan, türbini döndürmesi suretiyle iş elde edilir. Türbinin dönmesi, türbin ve kompresör arasında -ikisine de birleşik şekilde- var olan şaftın da dönmesini sağlar. Bu sayede kompresör, türbinin dönmesi ile iş yapar ve gelecek havayı sıkıştırır. Böylece süreklilik elde edilir. Son olarak hava nozülden dışarı atılır. Eğer türbin ve kompresör verimli ise türbin çıkışındaki basınç -nozülden dışarı atılan havanın basıncı- atmosfer basıncının neredeyse iki katı olacaktır.
+                    </p>
+                    <br>
+                    <div id="turbojet-two">
+                        <img src="./assets/articles/turbojet3.png" alt="">
+                        <p id="p3">
+                            Bir brülör kullanılarak itme kuvvetinde önemli artışlar elde edilebilir. Bu kısım türbinden sonra ve nozülden önce konumlandırılan ikinci bir yanma odasıdır. Eklenen bu kısım nozüle giden havanın sıcaklığını artırır. Sıcaklıktaki bu artışın sonucunda kalkışta %40, uçuş sırasında daha da fazla fazla itme kuvvetinde artış sağlanır.<br><br>
+                            Turbojet motor bölümlerinin basit şematik gösterimi yandaki şekilde mevcuttur. Ayrıca statik basınç p, statik sıcaklık T, eksenel akış hızı V ve itki kuvveti (thrust) F olarak gösterilmiştir.
+                        </p>
+                    </div>
+                    <blockquote>
+                        <span>Kaynakça:</span>
+                    </blockquote>
+                </div>
+                <div class="article-right-container">
+    
+                    <div class="article-right-containers">
+                        <h3 class="about-header">YAZAR HAKKINDA:</h3>
+                        <div class="author-pocket">
+                            <h4><a href="./berkayerenemin.html" class="link">Berkay Eren Emin</a></h4>
+                            <div id="turbojet-three">
+    
+                                <img id="turbojet-img-three" src="./assets/volunteers/berkayerenemin.jpg" alt="logo">
+                                
+                                <div id="author">
+                                    <p>Mühendisliğe ve teknolojiye olan ilgisi 10 yaşından itibaren başladı. 8 sene boyunca BİLSEM'de resim öğrencisi olarak eğitim aldı. İlk web sitesini 2015 yılında ve henüz 12 yaşındayken kurdu.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="about-header">YORUMLAR:</h3>
+                        <div class="powr-comments" id="fbc7d55c_1663702363"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
+        document.getElementById('mode-btn').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            localStorage.setItem('mode', document.body.classList);
+        })
+
+        if (localStorage.getItem('mode') != ''){
+            document.body.classList.add(localStorage.getItem('mode')); 
+            document.getElementById('mode-btn').checked = true;
+        }
+
+        document.getElementById('mode-btn2').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            localStorage.setItem('mode', document.body.classList);
+        })
+
+        if (localStorage.getItem('mode') != ''){
+            document.body.classList.add(localStorage.getItem('mode')); 
+            document.getElementById('mode-btn2').checked = true;
+        }
+
         feather.replace()
     </script>
 </body>

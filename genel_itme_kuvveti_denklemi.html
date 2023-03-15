@@ -8,65 +8,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Turbo, Latince “yüksek hızda dönen”, jet ise yine aynı dilde “fırlatmak” anlamına gelmektedir. Turbojet havacılık sektöründe geniş kullanım alanına sahip bir jet motoru tipidir. Aşağıda turbojetlerin genel bir şematik resmi görülmektedir.">
-    <meta name="keywords" content="tubojet, engines, turbojetengine, nasa, turbo, jet">
+        content="İtme kuvveti (thrust), roketi havada veya uzayda hareket ettiren bir kuvvettir ve roketin itki sistemleri tarafından üretilir.">
+    <meta name="keywords" content="itmekuvveti, genelitmekuvveti, genel-itme-kuvveti-denklemi, genel itme kuvveti denklemi, turkroket, turkroket.space, türkroket, türkrokettoplulugu">
     <meta name="author" content="Berkay Eren Emin">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 
     <title>Türk Roket Topluluğu | Genel İtme Kuvveti Denklemi</title>
-    <link rel="stylesheet" href="./styles/stylearticles.css">
+    <link rel="stylesheet" href="./styles/articles.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-    <div class="menu">
-        <a href="index.html" class="menu-name first">
-            <i data-feather="home"></i>
-        </a>
-        <a href="hakkimizda.html" class="menu-name">
-            <i data-feather="info"></i>
-        </a>
-        <a href="projelerimiz.html" class="menu-name">
-            <i data-feather="cpu"></i>
-        </a>
-        <a href="etkinliklerimiz.html" class="menu-name">
-            <i data-feather="calendar"></i>
-        </a>
-        <a href="egitim.html" class="menu-name">
-            <i data-feather="play-circle"></i>
-        </a>
-        <a href="blog.html" class="menu-name">
-            <i data-feather="edit"></i>
-        </a>
-        <a href="" class="menu-name">
-            <i data-feather="download"></i>
-        </a>
-        <a href="gonulluol.html" class="menu-name">
-            <i data-feather="user-plus"></i>
-        </a>
-        <a href="https://www.instagram.com/turkroket/" class="menu-name mention">
-            <i data-feather="instagram"></i>
-        </a>
-        <a href="" class="menu-name">
-            <i data-feather="youtube"></i>
-        </a>
-        <a href="https://kreosus.com/turkroket" class="menu-name support">
-            <i data-feather="heart"></i>
-        </a>
-        <a href="gizlilik.html" class="menu-name menuprivacy"> 
-            <i data-feather="shield"></i>
-        </a>
-    </div>
+    <div class="mobile">
+        <div class="mobile-2">
+            <div class="mobile-mainheader">
+                <div class="mobile-menu">
+                    <input id="toggle" type="checkbox">
 
-    <div class="blog">
-
-        <div class="main-header">
-            <!--<div class="header">Türk Roket Topluluğu</div>-->
-            <img class="header-image" src="./assets/baslik.png" alt="logo">
-        </div>
-
-        <div class="article-main">
-            <div class="article-container">
+                    <label class="toggle-container" for="toggle">
+                        <span class="button button-toggle"></span>
+                    </label>
+                    <nav class="nav">
+                        <a class="nav-item" href="./index.html">Anasayfa</a>
+                        <a class="nav-item" href="./hakkimizda.html">Hakkımızda</a>
+                        <a class="nav-item" href="./projelerimiz.html">Projelerimiz</a>
+                        <a class="nav-item" href="./etkinliklerimiz.html">Etkinliklerimiz</a>
+                        <a class="nav-item" href="./egitim.html">Eğitim</a>
+                        <a class="nav-item" href="./blog.html">Blog</a>
+                        <a class="nav-item"><del>İndirilebilir</del></a>
+                        <a class="nav-item" href="./gonulluol.html">Gönüllü Ol</a>
+                        <a class="nav-item" href="./bildir.html">Hata Bildir</a>
+                        <a class="nav-item" href="https://www.instagram.com/turkroket/">Instagram</a>
+                        <a class="nav-item" href="https://www.youtube.com/channel/UCZxxGNj_sL4eoJxKW0xS7mg">Youtube</a>
+                        <a class="nav-item" href="https://discord.gg/A8Ap3hN">Discord</a>
+                        <a class="nav-item" href="https://kreosus.com/turkroket">Destek Ol</a>
+                        <a class="nav-item" href="./gizlilik.html">Gizlilik</a>
+                    </nav>
+                </div>
+                <div class="mobile-header">
+                    <a href="./index.html">
+                        <img class="mobile-headerimg" src="./assets/baslik.png" alt="logo">
+                    </a>
+                    <label class="mode-control">
+                        <input id="mode-btn2" type="checkbox">
+                        <span><i data-feather="moon"></i></span>
+                        <span><i data-feather="sun"></i></span>
+                    </label>
+                </div>
+            </div>
+            <div class="mobile-body">
                 <p id="article-header">GENEL İTME KUVVETİ DENKLEMİ</p>
                 <!--<div class="article-container-detail">
                     <span class="writer">Yazar: Emin Emoğlu</span>
@@ -121,34 +111,182 @@
                 <blockquote>
                     <span>Kaynakça:</span>
                 </blockquote>
-            </div>
-            <div class="article-right-container">
+                <h3 class="about-header">YAZAR HAKKINDA:</h3>
+                <div class="author-pocket">
+                    <h4><a href="./berkayerenemin.html" class="link">Berkay Eren Emin</a></h4>
+                    <div id="turbojet-three">
 
-                <div class="article-right-containers">
-                    <h3 class="about-header">YAZAR HAKKINDA:</h3>
-                    <div class="author-pocket">
-                        <h4><a href="./berkayerenemin.html" class="link">Berkay Eren Emin</a></h4>
-                        <div id="turbojet-three">
-
-                            <img id="turbojet-img-three" src="./assets/volunteers/berkayerenemin.jpg" alt="logo">
-                            
-                            <div id="author">
-                                <p>Mühendisliğe ve teknolojiye olan ilgisi 10 yaşından itibaren başladı. 8 sene boyunca BİLSEM'de resim öğrencisi olarak eğitim aldı. İlk web sitesini 2015 yılında ve henüz 12 yaşındayken kurdu.</p>
-                            </div>
-
+                        <img id="turbojet-img-three" src="./assets/volunteers/berkayerenemin.jpg" alt="logo">
+                        
+                        <div id="author">
+                            <p>Mühendisliğe ve teknolojiye olan ilgisi 10 yaşından itibaren başladı. 8 sene boyunca BİLSEM'de resim öğrencisi olarak eğitim aldı. İlk web sitesini 2015 yılında ve henüz 12 yaşındayken kurdu.</p>
                         </div>
-                    </div>
-                    <h3 class="about-header">YORUMLAR:</h3>
-                    <div class="powr-comments" id="fbc7d55c_1663702363"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
-                </div>
 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div>
 
+    <div class="non-mobile">
+        <div class="menu">
+            <a href="index.html" class="menu-name" title="Anasayfa">
+                <i data-feather="home"></i>
+            </a>
+            <a href="hakkimizda.html" class="menu-name" title="Hakkımızda">
+                <i data-feather="info"></i>
+            </a>
+            <a href="projelerimiz.html" class="menu-name" title="Projelerimiz">
+                <i data-feather="cpu"></i>
+            </a>
+            <a href="etkinliklerimiz.html" class="menu-name" title="Etkinliklerimiz">
+                <i data-feather="calendar"></i>
+            </a>
+            <a href="egitim.html" class="menu-name" title="Eğitim">
+                <i data-feather="play-circle"></i>
+            </a>
+            <a href="blog.html" class="menu-name" title="Blog">
+                <i data-feather="edit"></i>
+            </a>
+            <!--<a class="menu-name" title="İndirilebilir">
+                <i data-feather="download"></i>
+            </a>-->
+            <a href="gonulluol.html" class="menu-name" title="Gönüllü Ol">
+                <i data-feather="user-plus"></i>
+            </a>
+            <a href="bildir.html" class="menu-name" title="Geri Bildirim">
+                <i data-feather="alert-triangle"></i>
+            </a>
+            <a href="https://www.instagram.com/turkroket/" class="menu-name mention" title="Türk Roket Topluluğu - Instagram">
+                <i data-feather="instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCZxxGNj_sL4eoJxKW0xS7mg" class="menu-name" title="Türk Roket Topluluğu - Youtube">
+                <i data-feather="youtube"></i>
+            </a>
+            <a href="https://kreosus.com/turkroket" class="menu-name support" title="Türk Roket Topluluğu - Destek">
+                <i data-feather="heart"></i>
+            </a>
+            <a href="gizlilik.html" class="menu-name menuprivacy" title="Türk Roket Topluluğu - Privacy"> 
+                <i data-feather="shield"></i>
+            </a>
+        </div>
+
+        <div class="blog">
+
+            <div class="main-header">
+                <!--<div class="header">Türk Roket Topluluğu</div>-->
+                <a href="./index.html">
+                    <img class="header-image" src="./assets/baslik.png" alt="logo">
+                </a>
+                <label class="mode-control">
+                    <input id="mode-btn" type="checkbox">
+                    <span><i data-feather="moon"></i></span>
+                    <span><i data-feather="sun"></i></span>
+                </label>
+            </div>
+    
+            <div class="article-main">
+                <div class="article-container">
+                    <p id="article-header">GENEL İTME KUVVETİ DENKLEMİ</p>
+                    <!--<div class="article-container-detail">
+                        <span class="writer">Yazar: Emin Emoğlu</span>
+                        <span class="reading-time">Okuma Süresi: 5 Dakika</span>
+                    </div>-->
+                    <img class="article-main-img" src="./assets/articles/genel-itme-kuvveti-denklemi.png" alt="">
+                    <br>
+                    <p>
+                        İtme kuvveti (thrust), roketi havada veya uzayda hareket ettiren bir kuvvettir ve roketin itki sistemleri tarafından üretilir. 
+                    </p>
+                    <p>
+                        İtme kuvveti -Newton'un üçüncü hareket yasasında da açıklandığı üzere- hızlanan bir gaz kütlesinin oluşturduğu tepki yoluyla üretilen mekanik bir kuvvettir. Bir gaz veya "çalışma sıvısı" yer çekimine doğru hızlandırılır ve roket ters yönde hareket eder. Bu gazı hızlandırmak için bizim bir tür itki sistemine ihtiyacımız vardır.
+                    </p>
+                    <p>
+                        "İtki sistemleri hakkında çeşitli bilgilere daha sonra değineceğiz. Şimdilik itki sistemini bir gazı hızlandıran makine gibi düşünelim."<br><br>Newton'un ikinci hareket yasasına göre, biz kuvveti bir zamandaki momentum değişimi şeklinde tanımlayabiliriz.<i>(Momentum cismin kütlesi ile hızının çarpımı ile bulunur.)</i><br><br>O zaman kuvvet denklemi;<br>F = ((m*V)2 - (m*V)1) / (t2-t1)             şeklinde olacaktır.<br><br>Eğer kütleyi sabit tutar ve hızı zamanla değiştirirsek bildiğimiz basit kuvvet denklemini elde ederiz. Kuvvet, cismin kütlesi ile ivmesinin çarpımıdır. <i>F = m.a</i> 
+                    </p>
+                    <p>Bir katı ile uğraşıyorsak kütleyi takip etmek nispeten kolaydır. Bir katının molekülleri birbirine sıkı sıkıya bağlıdır ve katı şeklini korur. Ancak bir akışkan <i>(sıvı veya gaz)</i> ile uğraşıyorsak ve özellikle hareketli bir akışkan ile uğraşıyorsak kütleyi takip etmek zorlaşır. Bu tür durumlarda önemli olan kütle değil kütle akış hızıdır.</p>
+                    <p><strong>Kütle Akış Hızı Nedir?</strong></p>
+                    <p>Kütle akış hızı, birim zamanda belirli bir düzlemde hareket eden kütle miktarıdır. Birimi kütle/zaman'dır. Simgesi <span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span> <i>(m üssü nokta)</i> olmasına rağmen bazen μ de kullanılır. Kütle akış hızının farklı adlandırmaları da yapılır. Örneğin akışkanlar mekaniğinde kütle akısı veya kütle akımı olarak adlandırılır.<br><br>Kütle akış hızı matematiksel olarak bir fonksiyonun limiti ile ifade edilir.</p>
+                    <br>
+                    <img src="./assets/articles/genel-itme-kuvveti-denklemi3.svg" id="itmekuvveti-img-two" alt="">
+                    <br>
+                    <p>
+                        Kütle akış hızı farklı şekillerde hesaplanabilir;
+                    </p>
+                    <br>
+                    <img src="./assets/articles/genel-itme-kuvveti-denklemi5.svg" id="itmekuvveti-img-four" alt="">
+                    <br>
+                    <p>
+                        Burada<br>ρ = akışkanın kütle yoğunluğu<br>v = akan kütlenin akış hızı<br>A = kesit alanı/yüzeyi<br>Q = debi<br>jm = kütle akısı<br>değerleridir.
+                    </p>
+                    <p>Yukarıdaki denklem kesit alanı düz zeminler için geçerlidir. Kesit alanı eğimli alanlar için denklem, yüzey integrali ile ifade edilir.</p>
+                    <p>
+                        Yani <span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span> sadece sıvının kütlesi demek değildir. Kütle akış hızıdır, birim zamandaki kütledir. Örneğin Newton'un ikinci yasasını şu şekilde yazabiliriz;<br>
+                        <br> F = <span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V veya F = d(mV)/dt
+                    </p>
+                    <p>
+                        Kütle akış hızı zaten zamana bağlılığı (kütle/zaman) içerdiğinden itki sistemi boyunca momentumdaki değişikliği, kütle akış hızı ile akışkan hızının çarpımının değişimi şeklinde de bulabiliriz. Burada akışkanın itki cihazından çıkışına "e" serbest olduğu duruma da "0" diyeceğiz.<br>
+                        <br> O zaman kuvvet formulü, F = (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V)e - (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V)0 <br><br>olacaktır.<br><br>Birim kontrolü denklemin sağ tarafında şunları gösterir:<br> F = ( kütle / zaman ) x ( uzunluk / zaman ) = ( kütle x uzunluk ) / zaman² <br>Bu bir kuvvetin boyutudur.<br><br><i>Birim (Unit) ve Boyut (Dimension) kelimeleri kesinlikle birbirine karıştırılmaması gereken birer kavramı ifade ederler. Bununla ilgili ayrıntılı bilgiye sonrasında değineceğiz.</i>
+                    </p>
+                    <img src="./assets/articles/genel-itme-kuvveti-denklemi2.png" id="itmekuvveti-img-one" alt="">
+                    <p>Çıkış basıncı, serbest hava basıncından farklı ise hesaba katmamız gereken ek bir etki daha vardır.</p>
+                    <p><i>Akışkan basıncı -gazlar üzerinden konuşursak- gaz moleküllerinin momentumu ile ilişkilidir ve uyguladığımız herhangi bir alana dik etki eder. Eğer akışta net bir basınç değişikliği varsa, momentumda da ek bir değişiklik vardır.</i></p>
+                    <p>Çıkış basıncı pe, serbest basınç p0 ve akışkanın çıktığı itki sisteminin çıkış alanı Ae olmak üzere genel itme kuvveti şu şekilde olacaktır.</p>
+                    <p>F = (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V)e - (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V)0 + (pe - p0) * Ae<br><br>İtme kuvveti denklemine çok dikkatli baktığımızda, yüksek itme kuvveti üretmenin iki yolu olduğunu görüyoruz.</p>
+                    <p>İlk yol motordan geçen hava miktarını arttırarak kütle akış hızını (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>) arttırmak olacaktır. Yani kısaca, birim zamanda motordan geçen hava kütlesini arttırmaktır. Pervaneli uçakların ve yüksek bypass oranına sahip turbofan motorların arkasındaki tasarım teorisi budur. Her saniye yüksek miktarda hava işlenir ancak hız çok fazla değişmez.</p>
+                    <p>Gaz türbinli motorlar için kullanılabilecek genel itme kuvveti denkleminin basitleştirilmiş bir versiyonu vardır. Bir türbün motorunun nozülü genellikle motordan çıkan havanın basıncını serbest havanın basıncına eşit yapmak için tasarlanmıştır. Bu durumda genel formüldeki basınç-alan terimi sıfıra eşit olur.</p><br>
+                    <p>İtme kuvveti;<br><br>F = (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V) - (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V).0<br><br>formulü ile bulunur.</p>
+                    <p>Genel itme kuvveti denkleminin roket motorları için kullanılabilecek basitleştirilmiş farklı bir versiyonu da vardır. Bir roket kendi içerisinde oksitleyicisini taşıdığından <i>-diğer bir deyişle, çalışma sıvısı kendisini çevreleyen hava olmadığından-</i> serbest durumdaki kütle akış hızı 0 olur ve genel denklem;<br><br>F = (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V)e + (pe - p0) * Ae<br><br>şeklini alır.</p>
+                    <p><strong>Roketlerin analizinde, kütle akış hızına olan bağımlılığı ortadan kaldıran, spesifik itme (Isp) adında faydalı bir roket performans parametresi vardır.<br><br>Isp = Veq / g0<br><br>Bu denklemde Veq; (<span><img src="./assets/articles/genel-itme-kuvveti-denklemi4.svg" id="itmekuvveti-img-three" alt=""></span>.V)e ve (pe-p0) * Ae terimlerine eşit olan eşdeğer hızdır. g0 ise yerçekimi ivmesidir.</strong></p>
+                    <p>Hem roketler hem de turbojetler için nozül önemli rol oynar. Nozülün tasarımıi belirli basınç ve sıcaklık değerlerinde akışkanın çıkış hızını belirler. Aynı zamanda nozülün tasarımı kütle akış hızını da ayarlar. Bu nedenle nozül tasarımı, bu sayfada formüllerle anlarıldığı gibi itki sistemlerinin itme kuvvetini belirleyen en önemli faktördür.</p>
+                    <blockquote>
+                        <span>Kaynakça:</span>
+                    </blockquote>
+                </div>
+                <div class="article-right-container">
+    
+                    <div class="article-right-containers">
+                        <h3 class="about-header">YAZAR HAKKINDA:</h3>
+                        <div class="author-pocket">
+                            <h4><a href="./berkayerenemin.html" class="link">Berkay Eren Emin</a></h4>
+                            <div id="turbojet-three">
+    
+                                <img id="turbojet-img-three" src="./assets/volunteers/berkayerenemin.jpg" alt="logo">
+                                
+                                <div id="author">
+                                    <p>Mühendisliğe ve teknolojiye olan ilgisi 10 yaşından itibaren başladı. 8 sene boyunca BİLSEM'de resim öğrencisi olarak eğitim aldı. İlk web sitesini 2015 yılında ve henüz 12 yaşındayken kurdu.</p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <h3 class="about-header">YORUMLAR:</h3>
+                        <div class="powr-comments" id="fbc7d55c_1663702363"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
     </div>
     <script>
+        document.getElementById('mode-btn').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            localStorage.setItem('mode', document.body.classList);
+        })
+
+        if (localStorage.getItem('mode') != ''){
+            document.body.classList.add(localStorage.getItem('mode')); 
+            document.getElementById('mode-btn').checked = true;
+        }
+
+        document.getElementById('mode-btn2').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            localStorage.setItem('mode', document.body.classList);
+        })
+
+        if (localStorage.getItem('mode') != ''){
+            document.body.classList.add(localStorage.getItem('mode')); 
+            document.getElementById('mode-btn2').checked = true;
+        }
+        
         feather.replace()
     </script>
 </body>
